@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 샌드박스 git lock 우회 과정에서 생긴 임시 파일 (삭제 권한이 없어 이동만 해둔 것)
+_to_delete_*

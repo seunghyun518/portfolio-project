@@ -10,18 +10,18 @@
 
 .heading {
   text-align: center;
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-heavy);
   letter-spacing: -0.02em;
-  padding-bottom: var(--space-4);
-  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-10);
   border-bottom: 2px solid var(--color-border);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: var(--space-8);
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-10);
   align-items: start;
 }
 
@@ -31,38 +31,43 @@
   object-fit: cover;
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .infoGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 .infoCard {
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
 }
 
 .infoLabel {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-extrabold);
-  color: var(--color-text-strong);
+  color: var(--color-primary-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .infoValue {
   display: block;
-  margin-top: var(--space-1);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-strong);
   text-decoration: none;
   word-break: break-all;
 }
@@ -73,12 +78,13 @@ a.infoValue:hover {
 }
 
 .description {
-  border: 1px dashed var(--color-border-strong);
-  border-radius: var(--radius-md);
-  padding: var(--space-4);
-  font-size: var(--font-size-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  font-size: var(--font-size-base);
   line-height: var(--line-height-relaxed);
   color: var(--color-text);
+  background: var(--color-bg-subtle);
 }
 
 @media (max-width: 640px) {
@@ -87,7 +93,7 @@ a.infoValue:hover {
   }
 
   .photo {
-    max-width: 220px;
+    max-width: 240px;
     margin: 0 auto;
   }
 

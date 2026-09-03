@@ -31,6 +31,15 @@ export const skills: SkillCategory[] = [
       { name: 'Spring Boot', reason: '', level: 2 },
     ],
   },
-  { id: 'tool-infra', label: 'Tool / Infra', items: [] },
+  {
+    id: 'tool-infra',
+    label: 'Tool / Infra',
+    items: [
+      { name: 'Docker', reason: '', level: 2 },
+      { name: 'AWS', reason: '', level: 2 },
+      { name: 'Redis', reason: '', level: 2 },
+      { name: 'Vercel', reason: '', level: 2 },
+    ],
+  },
   { id: 'ai', label: 'AI 툴', items: [] },
 ];
