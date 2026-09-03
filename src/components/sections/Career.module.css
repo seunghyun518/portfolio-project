@@ -63,12 +63,6 @@
   color: var(--color-text-muted);
 }
 
-.quote {
-  margin-top: var(--space-3);
-  font-size: var(--font-size-base);
-  color: var(--color-text);
-}
-
 .roles {
   margin-top: var(--space-3);
   display: flex;
@@ -84,13 +78,6 @@
   color: var(--color-text);
   background: var(--color-bg);
   box-shadow: var(--shadow-sm);
-}
-
-.award {
-  margin-top: var(--space-3);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary-strong);
 }
 
 .item {

@@ -34,19 +34,6 @@
   padding: 0 4px;
 }
 
-.summary {
-  max-width: 620px;
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-relaxed);
-  opacity: 0.9;
-}
-
-.lastUpdate {
-  margin-top: var(--space-4);
-  font-size: var(--font-size-xs);
-  opacity: 0.6;
-}
-
 @media (max-width: 640px) {
   .title {
     font-size: var(--font-size-4xl);

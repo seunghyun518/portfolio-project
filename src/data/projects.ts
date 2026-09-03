@@ -3,27 +3,14 @@ export type ProjectLink = {
   url: string;
 };
 
-export type TroubleShooting = {
-  problem: string;
-  cause: string;
-  failedAttempt: string;
-  solution: string;
-  result: string;
-};
-
 export type Project = {
   slug: string;
   title: string;
-  parts: string;
   thumbnail: string;
-  featured: boolean;
-  stack: string[];
-  period: string;
-  team: string;
-  role: string;
   overview: string;
-  retro: string;
-  troubles: TroubleShooting[];
+  description: string;
+  period: string;
+  stack: string[];
   links: ProjectLink[];
 };
 
@@ -32,31 +19,21 @@ export const projects: Project[] = [
   {
     slug: 'project-1',
     title: '프로젝트 1 (제목 준비중)',
-    parts: 'Front-end',
     thumbnail: '',
-    featured: true,
-    stack: ['React', 'TypeScript'],
+    overview: '프로젝트 한 줄 소개를 작성해 주세요.',
+    description: '프로젝트 상세 설명을 작성해 주세요. (배경, 목표, 진행 과정 등)',
     period: '2026.00 – 2026.00',
-    team: '팀 인원 미정',
-    role: '담당 역할 작성 예정',
-    overview: '프로젝트 개요를 작성해 주세요.',
-    retro: '',
-    troubles: [],
+    stack: ['React', 'TypeScript'],
     links: [],
   },
   {
     slug: 'project-2',
     title: '프로젝트 2 (제목 준비중)',
-    parts: 'Front-end',
     thumbnail: '',
-    featured: true,
-    stack: ['React', 'TypeScript'],
+    overview: '프로젝트 한 줄 소개를 작성해 주세요.',
+    description: '프로젝트 상세 설명을 작성해 주세요. (배경, 목표, 진행 과정 등)',
     period: '2026.00 – 2026.00',
-    team: '팀 인원 미정',
-    role: '담당 역할 작성 예정',
-    overview: '프로젝트 개요를 작성해 주세요.',
-    retro: '',
-    troubles: [],
+    stack: ['React', 'TypeScript'],
     links: [],
   },
 ];

@@ -14,7 +14,6 @@ export default function Career() {
             <div className={styles.main}>
               <p className={styles.name}>{career.name}</p>
               <p className={styles.period}>{career.period}</p>
-              {career.quote && <p className={styles.quote}>"{career.quote}"</p>}
               <div className={styles.roles}>
                 {career.roles.map((role) => (
                   <span key={role} className={styles.role}>
@@ -22,7 +21,6 @@ export default function Career() {
                   </span>
                 ))}
               </div>
-              {career.awardScale && <p className={styles.award}>{career.awardScale}</p>}
               {career.items.map((item) => (
                 <div key={item.title} className={styles.item}>
                   <p className={styles.itemTitle}>{item.title}</p>

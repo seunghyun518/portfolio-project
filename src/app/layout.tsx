@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import Gnb from '../components/common/Gnb';
-import ScrollTopButton from '../components/common/ScrollTopButton';
 import './globals.css';
 
 type LayoutProps = {
@@ -12,7 +11,6 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Gnb />
       {children}
-      <ScrollTopButton />
     </>
   );
 }

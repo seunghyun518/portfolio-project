@@ -9,10 +9,6 @@ export default function Hero() {
         <span className={styles.highlight}>{profile.name}</span>
         {profile.name ? '입니다.' : ''}
       </h1>
-      {profile.summary && <p className={styles.summary}>{profile.summary}</p>}
-      {profile.lastUpdate && (
-        <p className={styles.lastUpdate}>Last update · {profile.lastUpdate}</p>
-      )}
     </section>
   );
 }

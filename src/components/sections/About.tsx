@@ -11,7 +11,6 @@ export default function About() {
   const infoFields: InfoField[] = [
     { label: '이름', value: profile.name },
     { label: '생년월일', value: profile.birthdate },
-    { label: '위치', value: profile.location },
     { label: '학력', value: profile.education },
     {
       label: '이메일',

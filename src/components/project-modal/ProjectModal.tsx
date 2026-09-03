@@ -45,9 +45,7 @@ export default function ProjectModal({ slug, onClose }: ProjectModalProps) {
 
         <div className={styles.body}>
           <h3 className={styles.title}>{project.title}</h3>
-          <p className={styles.meta}>
-            {project.period} · {project.team}
-          </p>
+          {project.period && <p className={styles.meta}>{project.period}</p>}
           {project.stack.length > 0 && (
             <div className={styles.tags}>
               {project.stack.map((tech) => (
@@ -57,7 +55,7 @@ export default function ProjectModal({ slug, onClose }: ProjectModalProps) {
               ))}
             </div>
           )}
-          <p className={styles.summary}>{project.overview}</p>
+          <p className={styles.summary}>{project.description}</p>
 
           {project.links.length > 0 && (
             <div className={styles.links}>

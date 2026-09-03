@@ -1,7 +1,5 @@
-import { archives } from '../../data/archives';
-import { careers } from '../../data/careers';
 import { profile } from '../../data/profile';
-import ThemeSwitcher from './ThemeSwitcher';
+import { careers } from '../../data/careers';
 import styles from './Gnb.module.css';
 
 type NavItem = {
@@ -10,15 +8,11 @@ type NavItem = {
 };
 
 export default function Gnb() {
-  const hasArchiveContent =
-    archives.channels.length > 0 || archives.posts.length > 0 || Boolean(profile.resumeUrl);
-
   const navItems: NavItem[] = [
     { label: 'About me', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
     ...(careers.length > 0 ? [{ label: 'Career', href: '#career' }] : []),
-    ...(hasArchiveContent ? [{ label: 'Archiving', href: '#archive' }] : []),
   ];
 
   return (
@@ -33,7 +27,6 @@ export default function Gnb() {
           </a>
         ))}
       </nav>
-      <ThemeSwitcher />
     </header>
   );
 }

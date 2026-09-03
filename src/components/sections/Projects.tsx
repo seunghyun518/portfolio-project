@@ -28,7 +28,7 @@ export default function Projects({ onSelect }: ProjectsProps) {
             </div>
             <div className={styles.caption}>
               <p className={styles.title}>{project.title}</p>
-              <p className={styles.parts}>{project.parts}</p>
+              <p className={styles.overview}>{project.overview}</p>
             </div>
           </button>
         ))}

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Archive from '../components/sections/Archive';
 import About from '../components/sections/About';
 import Career from '../components/sections/Career';
 import Hero from '../components/sections/Hero';
@@ -17,7 +16,6 @@ export default function Page() {
       <Skills />
       <Projects onSelect={setSelectedSlug} />
       <Career />
-      <Archive />
       <ProjectModal slug={selectedSlug} onClose={() => setSelectedSlug(null)} />
     </>
   );

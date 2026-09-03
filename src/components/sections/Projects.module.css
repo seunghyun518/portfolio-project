@@ -70,7 +70,7 @@
   color: var(--color-text-strong);
 }
 
-.parts {
+.overview {
   margin-top: var(--space-2);
   font-size: var(--font-size-base);
   color: var(--color-text-muted);

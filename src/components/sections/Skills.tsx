@@ -21,7 +21,6 @@ export default function Skills() {
                 <li key={item.name} className={styles.item}>
                   <span className={styles.name}>{item.name}</span>
                   {item.reason && <span className={styles.reason}>{item.reason}</span>}
-                  <span className={styles.level}>{'★'.repeat(item.level)}</span>
                 </li>
               ))}
             </ul>
