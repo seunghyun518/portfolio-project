@@ -13,8 +13,24 @@ export type SkillCategory = {
 };
 
 export const skills: SkillCategory[] = [
-  { id: 'frontend', label: 'Frontend', items: [] },
-  { id: 'backend', label: 'Backend', items: [] },
+  {
+    id: 'frontend',
+    label: 'Frontend',
+    items: [
+      { name: 'HTML', reason: '', level: 2 },
+      { name: 'CSS', reason: '', level: 2 },
+      { name: 'JavaScript', reason: '', level: 2 },
+      { name: 'React', reason: '', level: 2 },
+    ],
+  },
+  {
+    id: 'backend',
+    label: 'Backend',
+    items: [
+      { name: 'Java', reason: '', level: 2 },
+      { name: 'Spring Boot', reason: '', level: 2 },
+    ],
+  },
   { id: 'tool-infra', label: 'Tool / Infra', items: [] },
   { id: 'ai', label: 'AI 툴', items: [] },
 ];

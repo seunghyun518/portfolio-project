@@ -111,4 +111,5 @@
    * ------------------------------------------------------------- */
   --layout-max-width: 1200px;
   --layout-gutter: var(--space-4);
+  --layout-gnb-height: 64px; /* Gnb.module.css 높이와 동기화 — 섹션별 100vh 계산에 재사용 */
 }
